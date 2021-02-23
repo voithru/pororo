@@ -20,6 +20,7 @@ requirements = [
     "marisa-trie",
     "kss",
     'dataclasses; python_version<"3.7"',
+    'scikit-image',
 ]
 
 VERSION = {}  # type: ignore
