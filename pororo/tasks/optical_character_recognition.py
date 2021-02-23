@@ -169,13 +169,14 @@ class PororoOCR(PororoSimpleBase):
 
         """
         detail = kwargs.get("detail", False)
+        paragraph = kwargs.get("paragraph", False)
 
         return self._postprocess(
             self._model(
                 image_path,
                 skip_details=False,
                 batch_size=1,
-                paragraph=True,
+                paragraph=paragraph,
             ),
             detail,
         )
